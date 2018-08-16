@@ -1,0 +1,117 @@
+{
+/*
+	// Place your snippets for C++ here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	*/
+		"Print to console": {
+			"prefix": "log",
+			"body": [
+				"console.log('$1');",
+				"$2"
+			],
+			"description": "Log output to console"
+		},
+		"assert": {
+			"prefix": "assert",
+			"body": [
+				"assert($1);"
+			],
+			"description": "assert expression"
+		},
+		"for": {
+			"prefix": "for",
+			"body": [
+				"for(int i = $1; $2; $3){",
+				"    $4",
+				"}"
+			],
+			"description": "for loop"
+		},
+		"while":{
+			"prefix": "while",
+			"body": [
+				"while($1){",
+				"    $2",
+				"}"
+			],
+			"description": "while loop"
+		},
+		"if": {
+			"prefix": "if",
+			"body": [
+				"if($1){",
+				"    $2",
+				"}",
+				"$3"
+			],
+			"description": "if()"
+		},
+		"class def":{
+			"prefix": "class d",
+			"body": [
+				"class $1{",
+				"public:",
+				"    $2",
+				"private:",
+				"    $3",
+				"};"
+			],
+			"description": "class def"
+		},
+		"class pu":{
+			"prefix": "class pu",
+			"body": [
+				"class $1 : public $2{",
+				"public:",
+				"    $3",
+				"private:",
+				"    $4",
+				"};"
+			],
+			"description": "class pub"
+		},
+		"template":{
+			"prefix": "template",
+			"body": [
+				"template <typename $1>"
+			],
+			"description": "template"
+		},
+		"template2": {
+			"prefix": "template2",
+			"body": "template <typename $1, typename $2>",
+			"description": "template 2 arg"
+		},
+		"ifndef": {
+			"prefix": "ifndef",
+			"body": [
+				"#ifndef $1",
+				"#define $1",
+				"$2",
+				"#endif // $1"
+			],
+			"description": "#ifndef"
+		},
+		"include": {
+			"prefix": "include<",
+			"body": [
+				"#include <$1>"
+			],
+			"description": "#include <>"
+		},
+		"include2": {
+			"prefix": "include\"",
+			"body": [
+				"#include \"$1\""
+			],
+			"description": "#include \"\""
+		},
+		".": {
+			"prefix": "-",
+			"body": "->$1",
+			"description": "->"
+		}
+}
