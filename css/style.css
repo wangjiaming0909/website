@@ -1,0 +1,27 @@
+BIG {
+    color:bisque;
+    size: 100px;
+    font-size:large;
+    font-style:normal;
+}
+
+DEF {
+    color:orange;
+    size: 100px;
+    font-size: large;
+    font-style: normal;
+}
+
+TT {
+    color:white;
+    size: 100px;
+    font-size: x-large;
+    font-style: normal;
+}
+
+STT {
+    color:orange;
+    size: 100px;
+    font-size: small;
+    font-style: normal;
+}
